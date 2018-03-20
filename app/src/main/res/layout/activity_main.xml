@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="start"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor= "#026959"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="LIST OF CABINET REQUIRE NIS BULK CHANGE"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/satu"
+                android:layout_marginLeft="10dp"
+                android:text="CABINET ID"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textSize="11.8dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/dua"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text="MIGRATION STATUS"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:textSize="11.8dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"/>
+            <TextView
+
+                android:id="@+id/tiga"
+                android:layout_marginLeft="10dp"
+                android:text="DATE NOTIFY NIS"
+                android:textSize="11.8dp"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/empat"
+                android:layout_marginLeft="10dp"
+                android:text="AGING"
+                android:textSize="11.8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+</LinearLayout>
